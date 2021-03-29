@@ -313,9 +313,11 @@ i {
   margin-right: 10px;
   text-transform: uppercase;
   background-color: var(--orange-o);
+  border-radius: 10px;
   padding: 10px 20px;
   font-size: 20px;
   font-weight: bold;
+  
 }
 
 .barra-equipo a:last-child{
@@ -330,9 +332,9 @@ i {
 }
 
 .fotos-equipo img {
-  padding: 30px;
-  width: 200px; 
-  height: 200px; 
+  padding: 20px;
+  width: 150px; 
+  height: 150px; 
   border-radius: 50%;
   object-fit: cover;
   text-align: center;
