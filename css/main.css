@@ -100,7 +100,9 @@ textarea {
 :root{
   --black: #2C2C2C;
   --orange:#F2715A;
+  --orange-o:rgb(242, 113, 90, 0.75);
   --light-gray: #EAEBEB;
+  --blackgray: rgba(0, 0, 0, 0.7);
 
 
 }
@@ -119,17 +121,45 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
+.title {
+  color: var(--light-gray);
+  margin-left: 5px;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+i {
+  background-color: var(--orange);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.contenedor {
+  background-color: var(--blackgray);
+  padding: 20px;
+}
+
 /* Header */
+
+.site-header {
+  margin: 0;
+}
 
 .hero{
   background-image: url("../img/hero.png");
-  height: 120vh;
+  min-height: 800px;
   background-position: top center;
   background-size: cover;  
+  background-attachment: fixed;
 }
 
 .nav{
-  padding: 20px 40px;
+  padding: 10px 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,7 +207,7 @@ body {
 }
 
 .rrss a{
-  font-size: 40px;
+  font-size: 30px;
   margin-right: 1rem;
   color: #ffffff;
 }
@@ -224,12 +254,88 @@ body {
   padding: 20px 40px;
 }
 
-
-
 .menu {
   padding: .5rem;
   color: var (--light-gray);
   
+}
+
+/* Servicios */
+
+.you-servicios {
+  display: flex;
+  height: auto;
+  align-items: flex-start;
+}
+
+.servicio {
+  width: 30%;
+}
+
+.servicio img{
+  display: block;
+  min-width: 300px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  
+}
+
+.servicios {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.servicios img{
+  width: 23%;
+  border-radius: 10px;
+  margin: 1%;
+}
+
+.team{
+  background-image: url("/img/bg-first.png");
+  height: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;  
+}
+
+.barra-equipo{
+  display: flex;
+}
+
+.barra-equipo a{
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+  text-transform: uppercase;
+  background-color: var(--orange-o);
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.barra-equipo a:last-child{
+  margin-right: 0px;
+}
+
+.fotos-equipo {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.fotos-equipo img {
+  padding: 30px;
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%;
+  object-fit: cover;
+  text-align: center;
 }
 
 /* 
