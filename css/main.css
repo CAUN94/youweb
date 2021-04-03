@@ -133,7 +133,7 @@ img {
   margin-bottom: 15px;
 }
 
-i {
+.rrss a i {
   background-color: var(--orange);
   border-radius: 50%;
   padding: 10px;
@@ -145,9 +145,24 @@ i {
 }
 
 /* Header */
+.nav{
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  background-color: var(--black);
+}
+
 
 .site-header {
   margin: 0;
+  padding-top: 20px;
+  margin-top: 100px;;
 }
 
 .hero{
@@ -156,17 +171,6 @@ i {
   background-position: top center;
   background-size: cover;  
   background-attachment: fixed;
-}
-
-.nav{
-  padding: 10px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  background-color: var(--black);  
 }
 
 .logo{
@@ -235,6 +239,11 @@ i {
   line-height: 1.5;
   color: #ffffff;
   display: block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: justify;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .action{
@@ -317,7 +326,10 @@ i {
   padding: 10px 20px;
   font-size: 20px;
   font-weight: bold;
-  
+}
+
+.barra-equipo a:hover{
+  cursor: pointer;
 }
 
 .barra-equipo a:last-child{
@@ -331,6 +343,14 @@ i {
   justify-content: space-evenly;
 }
 
+.foto-team {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .fotos-equipo img {
   padding: 20px;
   width: 150px; 
@@ -338,6 +358,58 @@ i {
   border-radius: 50%;
   object-fit: cover;
   text-align: center;
+}
+
+#mapid {
+  height: 300px;
+}
+
+.footer {
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+  clear: both;
+}
+
+.footer div {
+  flex: 1;
+
+}
+
+.footer-blog {
+  margin: 0 auto;
+}
+
+.footer-blog h3 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.footer-git {
+  text-align: center;
+}
+
+.footer-git i{
+  font-size: 120px;
+  text-align: center;
+  
+}
+
+.footer-rrss {
+  display: flex;
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-rrss a i {
+  padding: 10px;
+  color: #fff;
+  background-color: inherit;
+  font-size: 40px;
 }
 
 /* 

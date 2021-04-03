@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="/css/fontawesome.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -23,35 +26,34 @@
 </head>
 
 <body>
-  <header class="site-header hero">
-    <div class="contenido-header">
-      <div class="nav">
-        <img class="logo" src="/img/small-logo.png" alt="small-logo">
-        <nav class="menu">
-          <a href="#" class="selected">Inicio</a>
-          <a href="#">Equipo</a>
-          <a href="#">Blog</a>
-          <a href="#">Charlas</a>
-          <a href="#">Contacto</a>
-          <a href="#" class="highlight">Agendar</a>
-        </nav>
-        <nav class="rrss">
-          <a href="#"><i class="fab fa-whatsapp"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-        </nav>
+  <header class="nav">
+    <img class="logo" src="/img/small-logo.png" alt="small-logo">
+    <nav class="menu">
+      <a href="#" class="selected">Inicio</a>
+      <a href="#">Equipo</a>
+      <a href="#">Blog</a>
+      <a href="#">Charlas</a>
+      <a href="#">Contacto</a>
+      <a href="#" class="highlight">Agendar</a>
+    </nav>
+    <nav class="rrss">
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </nav>
+  </header>
+  <div class="site-header hero">
+    <div class="contenido-header informacion-you">
+      <img src="/img/logo.png" alt="logo" class="hero-logo">
+      <p class="slogan">You, Just Better es un centro integral de salud y medicina deportiva que promueve los estilos de vida saludables. Desde su fundación en agosto de 2018, You busca reubicar el foco de la salud hacia las personas, poniendo al paciente en el centro de la atención en salud y personalizando sus servicios.<br><br>Con una visión basada en el nuevo paradigma de la salud informática y centrada en la tecnología (Salud 4.0 o healthtech), You trabaja en el desarrollo tecnológico en la salud y en la creación de medios digitales que permiten lograr la personalización y la atención de alto valor centrada en el paciente en todo el proceso de atención en salud.</span></p>
+      <div class="action">
+        <a href="#">Agendar</a>
       </div>
-      <div class="informacion-you">
-        <img src="/img/logo.png" alt="logo" class="hero-logo">
-        <p class="slogan">You, Just Better es un centro integral de salud y medicina deportiva que promueve los estilos de vida saludables. Desde su fundación en agosto de 2018, You busca reubicar el foco de la salud hacia las personas, poniendo al paciente en el centro de la atención en salud y personalizando sus servicios.<br><br>Con una visión basada en el nuevo paradigma de la salud informática y centrada en la tecnología (Salud 4.0 o healthtech), You trabaja en el desarrollo tecnológico en la salud y en la creación de medios digitales que permiten lograr la personalización y la atención de alto valor centrada en el paciente en todo el proceso de atención en salud.</span></p>
-        <div class="action">
-          <a href="#">Agendar</a>
-        </div>
-        
-      </div>
+      
     </div>
-  </header><!-- Cabecera -->
+  </div><!-- Cabecera -->
+  
   <div class="contenedor you-servicios">
     <div class="servicio">
       <h2 class="title">
@@ -73,32 +75,66 @@
   </div><!-- Servicios -->
   <div class="team contenedor">
     <div class="barra-equipo">
-      <a href="#">Equipo</a>
-      <a href="#">Kinesiologia</a>
-      <a href="#">Informática</a>
-      <a href="#">Medico</a>
-      <a href="#">Deportivo</a>
+      <a onclick="filterSelection('all')">Equipo</a>
+      <a onclick="filterSelection('kine')">Kinesiologia</a>
+      <a onclick="filterSelection('ti')">Informática</a>
+      <a onclick="filterSelection('medico')">Medico</a>
+      <a onclick="filterSelection('sport')">Deportivo</a>
     </div>
     <div class="fotos-equipo">
-      <img src="/img/equipo/CRISTOBAL U.JPG" alt="equipo">
-      <img src="/img/equipo/DANIELA V.JPG" alt="equipo">
-      <img src="/img/equipo/FRANCISCO G..JPG" alt="equipo">
-      <img src="/img/equipo/IVER C.jpg" alt="equipo">
-      <img src="/img/equipo/Juan Manuel G.jpg" alt="equipo">
-      <img src="/img/equipo/MARIA SOFIA V.png" alt="equipo">
-      <img src="/img/equipo/mariano neira.JPG" alt="equipo">
-      <img src="/img/equipo/Melissa Ross Blanco.JPG" alt="equipo">
-      <img src="/img/equipo/pablo.jpg" alt="equipo">
-      <img src="/img/equipo/RENATA B.JPG" alt="equipo">
-      <img src="/img/equipo/Cristina Valenzuela.jpg" alt="equipo">
-      <img src="/img/equipo/Cami Valentini.png" alt="equipo">
-      <img src="/img/equipo/Carolina Troncoso.JPG" alt="equipo">
-      <img src="/img/equipo/CATALINA H.JPG" alt="equipo">
-      <img src="/img/equipo/CESAR MOYA.jpg" alt="equipo">
-      <img src="/img/equipo/SARA_TARIFENO.jpg" alt="equipo">
+      <img src="/img/equipo/CRISTOBAL U.JPG" class="foto-team ti" alt="CRISTOBAL U">
+      <img src="/img/equipo/DANIELA V.JPG" class="foto-team kine" alt="DANIELA V">
+      <img src="/img/equipo/FRANCISCO G..JPG" class="foto-team sport" alt="FRANCISCO G.">
+      <img src="/img/equipo/IVER C.jpg" class="foto-team ti kine" alt="IVER C">
+      <img src="/img/equipo/Juan Manuel G.jpg" class="foto-team medico" alt="Juan Manuel G">
+      <img src="/img/equipo/MARIA SOFIA V.png" class="foto-team medico" alt="MARIA SOFIA V">
+      <img src="/img/equipo/mariano neira.JPG" class="foto-team kine" alt="mariano neira">
+      <img src="/img/equipo/Melissa Ross Blanco.JPG" class="foto-team medico" alt="Melissa Ross Blanco">
+      <img src="/img/equipo/pablo.jpg" class="foto-team ti" alt="pablo">
+      <img src="/img/equipo/RENATA B.JPG" class="foto-team medico" alt="RENATA B">
+      <img src="/img/equipo/Cristina Valenzuela.jpg" class="foto-team kine" alt="Cristina Valenzuela">
+      <img src="/img/equipo/Cami Valentini.png" class="foto-team medico" alt="Cami Valentini">
+      <img src="/img/equipo/Carolina Troncoso.JPG" class="foto-team ti" alt="Carolina Troncoso">
+      <img src="/img/equipo/CATALINA H.JPG" class="foto-team sport" alt="CATALINA H">
+      <img src="/img/equipo/CESAR MOYA.jpg" class="foto-team kine" alt="CESAR MOYA">
+      <img src="/img/equipo/SARA_TARIFENO.jpg" class="foto-team sport" alt="SARA_TARIFENO">
+      <img src="/img/equipo/ALONSO K.jpg" class="foto-team kine" alt="ALONSO K.jpg">
     </div>
   </div>
+  <div class="contenedor ubicacion">
+    <h2 class="title">
+      Ubicación
+    </h2>
+  </div>
+  <div id="mapid">
+  </div><!-- Leaflet -->
+  
+  <footer class="contenedor">
+    <div class="footer">
+      <div class="footer-blog">
+        <h3>Blog</h3>
+        <ul>
+          <li>Hola</li>
+          <li>Hola</li>
+          <li>Hola</li>
+        </ul>
+      </div>
+      <div class="footer-git">
+        <i class="fab fa-github"></i>
+      </div>
+      <div class="footer-rrss">
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
 
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
