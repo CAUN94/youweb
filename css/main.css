@@ -126,11 +126,11 @@ img {
 }
 
 .title {
-  color: var(--light-gray);
-  margin-left: 5px;
+  color: #fff;
   font-size: 30px;
   margin: 0;
-  margin-bottom: 15px;
+  font-weight: 800;
+  -webkit-text-stroke: 0.5px var(--black);
 }
 
 .rrss a i {
@@ -144,7 +144,25 @@ img {
   padding: 20px;
 }
 
+
+.bg-menu-orange {
+  background-color: #f37059;
+  height: 250px;
+}
+
+.bg-menu-gray {
+  background-color: #2c2c2c;
+  height: 125px;
+}
+
+@media only screen and (max-width: 800px) {
+  .bg-menu-gray {
+    height: 20px;
+  }
+}
+
 /* Header */
+
 .nav{
   padding: 10px 40px;
   display: flex;
@@ -159,25 +177,117 @@ img {
 }
 
 
+@media only screen and (max-width: 800px) {
+  .nav {
+    display: block;
+  }
+  .nav img{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .menu {
+    display: none;
+  }
+
+  .menu a {
+    display: none;
+  }
+
+
+}
+
 .site-header {
   margin: 0;
   padding-top: 20px;
-  margin-top: 100px;;
+  margin-top: 100px;
+  background-color: #2c2c2c;
+  min-height: 500px;
 }
 
-.hero{
-  background-image: url("../img/hero.png");
-  min-height: 800px;
-  background-position: top center;
-  background-size: cover;  
-  background-attachment: fixed;
+@media only screen and (max-width: 800px) {
+  .site-header{
+    min-height: 20px;
+  }
+}
+
+
+.menu-container {
+  display: flex;
+  margin: 0 auto;
+  width: 85%;
+  height: 100%;
+  justify-content: center;
+  align-items: center; 
+}
+@media only screen and (max-width: 800px) {
+  .menu-container{
+    display: flex;
+    margin: 0 auto;
+    width: 85%;
+    height: 100%;
+    justify-content: center;
+    align-items: center; 
+  }
+}
+
+.menu-container-img{
+  flex: 1;
+  padding: 0 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .menu-container-img {
+    display: none;
+  }
+}
+
+.menu-container-img img{
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+
+.menu-container-text{
+  flex: 2;
+  padding: 0 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .menu-container-text {
+    display:block;
+    margin: 0 auto;
+    width: 70%;
+    font-size: 12px;
+  }
+}
+
+.menu-text {
+  color: #ffffff;
+  font-size: 1.2em;
+
 }
 
 .logo{
   flex: 5;
-  width: 5rem;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
 }
+
+
+@media only screen and (max-width: 800px) {
+  .logo{
+    flex: 1;
+    width: 40%;
+
+  }
+}
+
 
 .menu{
   flex: 80;
@@ -192,7 +302,7 @@ img {
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  padding: 10px 15px;
+  padding: 2px 18px;
 }
 
 .menu a:last-child{
@@ -271,36 +381,211 @@ img {
 
 /* Servicios */
 
-.you-servicios {
-  display: flex;
-  height: auto;
-  align-items: flex-start;
-}
+.you-servicios{
+  background: url('/img/bg-gym.jpg') no-repeat center center fixed; 
+  background-size: cover;
 
-.servicio {
-  width: 30%;
-}
-
-.servicio img{
-  display: block;
-  min-width: 300px;
-  width: 90%;
-  margin: 0 auto;
-  border-radius: 10px;
-  
 }
 
 .servicios {
-  width: 70%;
+  margin: 0 auto;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.servicios img{
-  width: 23%;
+.servicio{
+  margin-top: 20px;
+  height: 100px;
+  flex: 0 0 22%;
   border-radius: 10px;
-  margin: 1%;
+  background-color: var(--light-gray);
+}
+
+@media only screen and (max-width: 800px) {
+  .servicios {
+    display: block;
+  }
+}
+
+.servicio-empty{
+  margin-top: 20px;
+  height: 100px;
+  flex: 0 0 22%;
+  border-radius: 10px;
+}
+
+
+.servicio-container {
+  display: flex;
+  padding: 10px 25px;
+}
+
+.servicio-container span {
+  flex: 3 0 22%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 6px;
+}
+
+.servicio-container img {
+  flex: 1;
+  width: 40%;
+  height: 80px;
+  max-width: 80px;
+  top: 0;
+}
+
+
+
+.mision {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 40px 0;
+}
+
+.mision span {
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 25px;
+  width: 60%;
+}
+
+@media only screen and (max-width: 800px) {
+  .mision span {
+    font-size: 18px;
+  }
+}
+
+.mision a {
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size:calc(8px + 0.8vw);
+  font-weight: bold;
+  margin: 0 auto;
+  border-style: solid;
+  border-color: #fff;
+  margin-top: 40px;
+  text-decoration: none;
+  background-color: var(--orange);
+  color: #ffffff;
+  padding: 10px 40px;
+}
+
+.instagram {
+  background-color: var(--light-gray);
+  margin: 0;
+  
+}
+
+.instagram span {
+  margin-left: 10px;
+}
+
+.instagram-logo {
+  margin-left: 10px;
+  width: 80px;
+  background-color: var(--black);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+  .instagram-logo {
+    width: 40px;
+  }
+}
+
+.instagram-pictures {
+  margin-top: 10px;
+  display: flex;
+  padding: 10px 25px;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 800px) {
+  .instagram-pictures {
+    display: block;
+  }
+}
+
+.instagram-picture {
+  width: 90%;
+} 
+
+@media only screen and (max-width: 800px) {
+  .instagram-picture {
+    width: 80%;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
+
+.call-to-actions {
+  background-color: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .call-to-actions {
+    display: block;
+  }
+}
+
+.call-to-action {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 140px;
+}
+
+.call-to-action span a{
+  text-decoration: none;
+  color: var(--light-gray);
+}
+
+@media only screen and (max-width: 800px) {
+  .call-to-action{
+    margin: 0 auto;
+    margin-bottom: 10px;
+  } 
+}
+
+.call-to-action img {
+  width: 40px;
+}
+
+@media only screen and (max-width: 800px) {
+  .call-to-action img {
+    width: 40px;
+    margin-right: 20px;
+  } 
+}
+
+.call-to-action span {
+  color: var(--light-gray);
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .call-to-action span {
+    font-size: 15px;
+  } 
+}
+
+.instagram span a {
+  text-decoration: none;
+  color: var(--black);
 }
 
 .team{

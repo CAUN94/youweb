@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>You Just Better</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,91 +27,125 @@
 
 <body>
   <header class="nav">
-    <img class="logo" src="/img/small-logo.png" alt="small-logo">
+    <img class="logo" src="/img/logo.png" alt="small-logo">
     <nav class="menu">
       <a href="#" class="selected">Inicio</a>
-      <a href="#">Equipo</a>
-      <a href="#">Blog</a>
-      <a href="#">Charlas</a>
-      <a href="#">Contacto</a>
-      <a href="#" class="highlight">Agendar</a>
-    </nav>
-    <nav class="rrss">
-      <a href="#"><i class="fab fa-whatsapp"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a target="_blank" href="https://blog.justbetter.cl/">Blog</a>
+      <!-- <a href="#">Alianzas</a> -->
+      <!-- <a href="#">Nosotros</a> -->
+      <a target="_blank" href="http://agendamiento.softwaremedilink.com/agendas/online/f8f6bc91ed06a41fb6527cdbb7dd65b9638c84fd">Reserva Hora</a>
+      <a target="_blank" href="https://web.whatsapp.com/send?phone=56933809726&text=Hola!">Contacto</a>
+      <!-- <a href="#" class="highlight">Agendar</a> -->
     </nav>
   </header>
   <div class="site-header hero">
-    <div class="contenido-header informacion-you">
-      <img src="/img/logo.png" alt="logo" class="hero-logo">
-      <p class="slogan">You, Just Better es un centro integral de salud y medicina deportiva que promueve los estilos de vida saludables. Desde su fundación en agosto de 2018, You busca reubicar el foco de la salud hacia las personas, poniendo al paciente en el centro de la atención en salud y personalizando sus servicios.<br><br>Con una visión basada en el nuevo paradigma de la salud informática y centrada en la tecnología (Salud 4.0 o healthtech), You trabaja en el desarrollo tecnológico en la salud y en la creación de medios digitales que permiten lograr la personalización y la atención de alto valor centrada en el paciente en todo el proceso de atención en salud.</span></p>
-      <div class="action">
-        <a href="#">Agendar</a>
-      </div>
-      
+    <div class="bg-menu-gray"></div>
+    <div class="bg-menu-orange">
+        <div class="menu-container">
+          <div class="menu-container-img"><img src="/img/bg-first.png" alt="hero"></div>
+          <div class="menu-container-text">
+            <span class="menu-text">You, Just Better es un centro integral de salud y medicina deportiva que promueve los estilos de vida saludables, entregando un servicio de atención personalizada y adaptando la integridad de nuestros servicios al proceso de autorealización.</span>
+          </div>
+        </div>
     </div>
+    <div class="bg-menu-gray"></div>
   </div><!-- Cabecera -->
   
   <div class="contenedor you-servicios">
-    <div class="servicio">
-      <h2 class="title">
-        Nuestros Servicios
-      </h2>
-      <img src="/img/servicios/1.png" alt="servicio">
-    </div>
+    <h2 class="title">
+      Servicios
+    </h2>
     <div class="servicios">
-      <img src="/img/servicios/2.png" alt="servicio">
-      <img src="/img/servicios/3.png" alt="servicio">
-      <img src="/img/servicios/4.png" alt="servicio">
-      <img src="/img/servicios/5.png" alt="servicio">
-      <img src="/img/servicios/6.png" alt="servicio">
-      <img src="/img/servicios/7.png" alt="servicio">
-      <img src="/img/servicios/8.png" alt="servicio">
-      <img src="/img/servicios/9.png" alt="servicio">
-      
+      <div class="servicio">
+        <div class="servicio-container">
+          <span>Medicina Deportiva</span>
+          <img src="/img/iconos/medicina_deportiva.png" alt="">
+        </div>
+      </div>
+      <div class="servicio">
+        <div class="servicio-container">
+          <span>Nutrición</span>
+          <img src="/img/iconos/nutricion.png" alt="">
+        </div>
+      </div>
+      <div class="servicio">
+        <div class="servicio-container">
+          <span>Kinesiología</span>
+          <img src="/img/iconos/kinesiologia.png" alt="">
+        </div>
+      </div>
+      <div class="servicio">
+        <div class="servicio-container">
+          <span>Psicología del Deporte</span>
+          <img src="/img/iconos/psicolofia_deporte.png" alt="">
+        </div>
+      </div>
+      <div class="servicio">
+        <div class="servicio-container">
+          <span>Entrenamiento</span>
+          <img src="/img/iconos/entrenamiento.png" alt="">
+        </div>
+      </div>
+      <div class="servicio">
+        <div class="servicio-container">
+          <span>Psicología Clinica</span>
+          <img src="/img/iconos/psicolofia_deporte.png" alt="">
+        </div>
+      </div>
+      <div class="servicio-empty">
+      </div>
+      <div class="servicio-empty">
+      </div>
+
     </div>
   </div><!-- Servicios -->
-  <div class="team contenedor">
-    <div class="barra-equipo">
-      <a onclick="filterSelection('all')">Equipo</a>
-      <a onclick="filterSelection('kine')">Kinesiologia</a>
-      <a onclick="filterSelection('ti')">Informática</a>
-      <a onclick="filterSelection('medico')">Medico</a>
-      <a onclick="filterSelection('sport')">Deportivo</a>
-    </div>
-    <div class="fotos-equipo">
-      <img src="/img/equipo/CRISTOBAL U.JPG" class="foto-team ti" alt="CRISTOBAL U">
-      <img src="/img/equipo/DANIELA V.JPG" class="foto-team kine" alt="DANIELA V">
-      <img src="/img/equipo/FRANCISCO G..JPG" class="foto-team sport" alt="FRANCISCO G.">
-      <img src="/img/equipo/IVER C.jpg" class="foto-team ti kine" alt="IVER C">
-      <img src="/img/equipo/Juan Manuel G.jpg" class="foto-team medico" alt="Juan Manuel G">
-      <img src="/img/equipo/MARIA SOFIA V.png" class="foto-team medico" alt="MARIA SOFIA V">
-      <img src="/img/equipo/mariano neira.JPG" class="foto-team kine" alt="mariano neira">
-      <img src="/img/equipo/Melissa Ross Blanco.JPG" class="foto-team medico" alt="Melissa Ross Blanco">
-      <img src="/img/equipo/pablo.jpg" class="foto-team ti" alt="pablo">
-      <img src="/img/equipo/RENATA B.JPG" class="foto-team medico" alt="RENATA B">
-      <img src="/img/equipo/Cristina Valenzuela.jpg" class="foto-team kine" alt="Cristina Valenzuela">
-      <img src="/img/equipo/Cami Valentini.png" class="foto-team medico" alt="Cami Valentini">
-      <img src="/img/equipo/Carolina Troncoso.JPG" class="foto-team ti" alt="Carolina Troncoso">
-      <img src="/img/equipo/CATALINA H.JPG" class="foto-team sport" alt="CATALINA H">
-      <img src="/img/equipo/CESAR MOYA.jpg" class="foto-team kine" alt="CESAR MOYA">
-      <img src="/img/equipo/SARA_TARIFENO.jpg" class="foto-team sport" alt="SARA_TARIFENO">
-      <img src="/img/equipo/ALONSO K.jpg" class="foto-team kine" alt="ALONSO K.jpg">
+  <div class="contenedor mision">
+    <span>
+      "Devolver el foco de la salud a la persona, entregado una atención personalizada y promoviendo un estilo de vida saludable"
+    </span>
+    <a target="_blank" href="http://agendamiento.softwaremedilink.com/agendas/online/f8f6bc91ed06a41fb6527cdbb7dd65b9638c84fd">Agenda tu hora aquí</a>
+  </div>
+
+  <div class="contenedor instagram">
+    <img class="instagram-logo" src="/img/icon.png" alt="logo">
+    <span><a target="_blank" href="https://www.instagram.com/you.justbetter/?hl=es-la"> @You.justbetter</a></span>
+    <div class="instagram-pictures">
+      <a href="https://www.instagram.com/p/COtZ_SqIz9T/?utm_source=ig_web_copy_link" target="_blank">
+        <img class="instagram-picture" src="/img/instagram/instagram3.jpeg" alt="">
+      </a>
+      <a href="https://www.instagram.com/p/CPbzWB6HoaM/?utm_source=ig_web_copy_link" target="_blank">
+        <img class="instagram-picture" src="/img/instagram/instagram1.jpeg" alt="">
+      </a>
+      <a href="https://www.instagram.com/p/CPV70-IHanu/?utm_source=ig_web_copy_link" target="_blank">
+        <img class="instagram-picture" src="/img/instagram/instagram2.jpeg" alt="">
+      </a>
+      <a href="https://www.instagram.com/p/COQXmObgaG-/?utm_source=ig_web_copy_link" target="_blank">
+        <img class="instagram-picture" src="/img/instagram/instagram4.jpeg" alt="">
+      </a>
     </div>
   </div>
-  <div class="contenedor ubicacion">
-    <h2 class="title">
-      Ubicación
-    </h2>
+
+  <div class="contenedor call-to-actions">
+    <div class="call-to-action">
+      
+      <img src="/img/iconos/whatsapp.png" alt="whatsapp">
+      <span>
+        <a target="_blank" href="https://web.whatsapp.com/send?phone=56933809726&text=Hola!">+569 33809727</a>
+      </span>
+    </div>
+    <div class="call-to-action">
+      <img src="/img/iconos/ubicacioin.png" alt="ubicacion">
+      <span>San Pascual 736, Las Condes</span>
+    </div>
   </div>
+
   <div id="mapid">
   </div><!-- Leaflet -->
   
   <footer class="contenedor">
     <div class="footer">
-      <div class="footer-blog">
+      <span>© You Just Better Programs <script>document.write(new Date().getFullYear())</script></span>
+      <!-- <div class="footer-blog">
         <h3>Blog</h3>
         <ul>
           <li>Hola</li>
@@ -127,7 +161,7 @@
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-facebook"></i></a>
         <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
+      </div> -->
     </div>
 
   </footer>
