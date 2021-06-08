@@ -1,48 +1,45 @@
-function shuffle(a) {
-    var j, x, i;
-    for (i = a.length - 1; i > 0; i--) {
-        j = Math.floor(Math.random() * (i + 1));
-        x = a[i];
-        a[i] = a[j];
-        a[j] = x;
-    }
-    return a;
-}
-
-// Map
-var map = L.map('mapid').setView([-33.417642958010035, -70.57758338876975], 15);
-
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
-L.marker([-33.417642958010035, -70.57758338876975]).addTo(map)
-    .bindPopup('You Just Better<br>San Pascual 736, Las Condes')
-    .openPopup();
 
 // Shuffle Image from Equipo
-var list = document.getElementsByClassName('fotos-equipo')[0];
-function shuffleNodes() {
-    var nodes = list.children, i = 0;
-    nodes = shuffle(Array.from(nodes))
-    while(i < nodes.length) {
-        list.appendChild(nodes[i]);
-        ++i;
-    }
+function shuffle(a) {
+  var j, x, i;
+  for (i = a.length - 1; i > 0; i--) {
+      j = Math.floor(Math.random() * (i + 1));
+      x = a[i];
+      a[i] = a[j];
+      a[j] = x;
+  }
+  return a;
 }
-shuffleNodes();
+
+var list = document.getElementsByClassName('team-pictures')[0];
+function shuffleNodes() {
+  var nodes = list.children, i = 0;
+  nodes = shuffle(Array.from(nodes))
+  while(i < nodes.length) {
+      list.appendChild(nodes[i]);
+      i++;
+  }
+}
+shuffleNodes()
 
 // Filter Professional
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
-  x = document.getElementsByClassName("foto-team");
+  x = document.getElementsByClassName("team-picture");
+  icon = document.getElementsByClassName("team-service");
+  for (i = 0; i < icon.length; i++) {
+    w3RemoveClass(icon[i], "active");
+    // w3RemoveClass(x[i], "show");
+    if (icon[i].className.indexOf(c) > -1) w3AddClass(icon[i], "active");
+  }
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
+    // w3RemoveClass(icon[i], "active");
     w3RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
+
 }
 
 function w3AddClass(element, name) {
