@@ -1,17 +1,19 @@
 var Alert = new CustomAlert();
 function CustomAlert(){
 
-  this.render = function(){
+  this.render = function(name){
       //Show Modal
-      let popUpBox = document.getElementById('popUpBox');
+      popUpBoxName = 'popUp'+name
+      let popUpBox = document.getElementById(popUpBoxName);
       popUpBox.style.display = "block";
       //Close Modal
-      document.getElementById('closeModal').innerHTML = '<button onclick="Alert.ok()">OK</button>';
+      closeModal = 'closeModal'+name
+      document.getElementById(closeModal).innerHTML = '<button onclick="Alert.ok(`'+name+'`)">OK</button>';
   }
     
-  this.ok = function(){
-    document.getElementById('popUpBox').style.display = "none";
-    document.getElementById('popUpOverlay').style.display = "none";
+  this.ok = function(name){
+    popUpBoxName = 'popUp'+name
+    document.getElementById(popUpBoxName).style.display = "none";
   }
 }
 

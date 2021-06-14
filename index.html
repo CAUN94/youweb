@@ -56,67 +56,204 @@
       Servicios
     </h2>
     <div class="servicios">
-      <div class="servicio">
+      <div class="servicio" onclick="Alert.render('MediD')">
         <div class="servicio-container">
           <span>Medicina Deportiva</span>
           <img src="/img/iconos/medicina_deportiva.png" alt="">
         </div>
       </div>
-      <div class="servicio">
+      <div id="popUpMediD" class="popUpBox">
+        <div class="box">       
+          <h1>Medicina Deportiva</h1>
+          <div class="box-container">
+            <p>
+              En construcción
+            </p>
+            <ul>
+              <li>Medicina del Deporte Presencial $45,000 Duración: 30 min</li>
+              <li>Medicina del Deporte Online  $40,000 Duración: 30 min</li>
+              <li>Evaluación Médico Nutricional  $60,000 Duración: 60 min</li>
+            </ul>
+          
+          </div>
+          <div id="closeModalMediD"></div>
+        </div>
+      </div>
+
+      <div class="servicio" onclick="Alert.render('Nutri')">
         <div class="servicio-container">
           <span>Nutrición</span>
           <img src="/img/iconos/nutricion.png" alt="">
         </div>
       </div>
-      <div class="servicio">
+
+      <div id="popUpNutri" class="popUpBox">
+        <div class="box">       
+          <h1>Nutrición</h1>
+          <div class="box-container">
+          <p>
+            El área de nutrición de You se basa en educar a la persona para que se transforme en un experto en su mundo, en donde es capaz de reconocer sus necesidades y aplicar los hábitos alimenticios que le permitan su estado óptimo de bienestar. En la primera sesión se conocen los antecedentes del paciente y se fijar un objetivo a lograr, luego los avances se irán monitoreando en los controles.
+          </p>
+          <ul>
+            <li>Evaluación Nutricional Presencial $40.000 Duración: 60 min</li>
+            <li>Evaluación Nutricional Online $35.000 Duración: 60 min</li>
+            <li>Control Nutricional Presencial $30.000 Duración: 30 min</li>
+            <li>Control Nutricional Online $25.000 Duración: 30 min</li>
+          </ul>
+          </div>
+          <div id="closeModalNutri"></div>
+        </div>
+      </div>
+
+      <div class="servicio" onclick="Alert.render('Kine')">
         <div class="servicio-container">
           <span>Kinesiología</span>
           <img src="/img/iconos/kinesiologia.png" alt="">
         </div>
       </div>
-      <div class="servicio">
+
+      <div id="popUpKine" class="popUpBox">
+        <div class="box">       
+          <h1>Kinesiología</h1>
+          <div class="box-container">
+          <p>
+            Realiza una evaluación completa, analizando el historial del paciente además de una examinación física, donde se evidencian las limitaciones que influyen en la calidad de vida del paciente.
+          </p>
+          <ul>
+            <li>Consulta Presencial $30.000 Duración: 55 min</li>
+            <li>Consulta Online $25.000 Duración: 55 min</li>
+            <li>Consulta Director Clinico Presencial $33.000 Duración: 55 min</li>
+            <li>Consulta Director Clinico Online $28.000 Duración: 55 min</li>
+            <li>Masaje Descontracturante Presencial $28.000 Duración: 55 min</li>
+            <li>Botas Recovery Presencial $5.000 Duración: 30 min</li>
+          </ul>
+          </div>
+          <div id="closeModalKine"></div>
+        </div>
+      </div>
+
+      <div class="servicio" onclick="Alert.render('PsiD')">
         <div class="servicio-container">
           <span>Psicología del Deporte</span>
           <img src="/img/iconos/pscicologia_deportiva.png" alt="">
         </div>
       </div>
-      <div class="servicio">
+
+      <div id="popUpPsiD" class="popUpBox">
+        <div class="box">       
+          <h1>Psicología del Deporte</h1>
+          <div class="box-container">
+          <p>
+            Se busca potenciar al deportista para que logre cumplir sus objetivos y lograr su bienestar. Para esto, se indaga en las variables psicológicas que impactan en su desempeño y así determinar cuáles se deben fortalecer con el entrenamiento mental.
+          </p>
+          <ul>
+            <li>Consulta Psicología del Deporte Presencial $30.000 Duración: 50 min</li>
+            <li>Consulta Psicología del Deporte Online $30.000 Duración: 50 min</li>
+          </ul>
+          </div>
+          <div id="closeModalPsiD"></div>
+        </div>
+      </div>
+
+      <div class="servicio" onclick="Alert.render('Train')">
         <div class="servicio-container">
           <span>Entrenamiento</span>
           <img src="/img/iconos/entrenamiento.png" alt="">
         </div>
       </div>
-      <div class="servicio">
+
+      <div id="popUpTrain" class="popUpBox">
+        <div class="box">       
+          <h1>Entrenamiento</h1>
+          <div class="box-container">
+          <p>
+            En construcción
+          </p>
+          <ul>
+            <li>Entrenamiento Grupal Online $40.000 Duración: 55 min</li>
+            <!-- <li>Personalizado 1 Clase Semanal Presencial $90.000 Duración: 55 min</li> -->
+            <li>Personalizado 1 Clase Semanal Online $72.000 Duración: 55 min</li>
+            <!-- <li>Personalizado 2 Clases Semanales Presencial $160.000 Duración: 55 min</li> -->
+            <li>Personalizado 2 Clases Semanales Online $120.000 Duración: 55 min</li>
+            <!-- <li>Personalizado 3 Clases Semanales Presencial $210.000 Duración: 55 min</li> -->
+            <!-- <li>Duplas 1 Clase Semanal Presencial $140.000 Duración: 55 min</li> -->
+            <li>Duplas 1 Clase Semanal Online $112.000 Duración: 55 min</li>
+            <!-- <li>Duplas 2 Clases Semanales Presencial $240.000 Duración: 55 min</li> -->
+            <li>Duplas 2 Clases Semanales Online $192.000 Duración: 55 min</li>
+            <!-- <li>Duplas 3 Clases Semanales Presencial $320.000 Duración: 55 min</li> -->
+            <li>Bienvenidos Al Entrenamiento 2 Veces Semana Online $20.000 Duración: 55 min</li>
+          </ul>
+          </div>
+          <div id="closeModalTrain"></div>
+        </div>
+      </div>
+
+      <div class="servicio" onclick="Alert.render('PsiC')">
         <div class="servicio-container">
           <span>Psicología Clinica</span>
           <img src="/img/iconos/psicolofia_deporte.png" alt="">
         </div>
       </div>
-      <div class="servicio">
+
+      <div id="popUpPsiC" class="popUpBox">
+        <div class="box">       
+          <h1>Psicología Clinica</h1>
+          <div class="box-container">
+          <p>
+            En el área de psicología clínica se prioriza la salud mental de las personas. En las primeras sesiones se entrevista al consultante con el fin de conocerlo e identificar su motivo de consulta. En las siguientes sesiones se trabajan estrategias y técnicas para conseguir una mejora en su bienestar personal.
+          </p>
+          <ul>
+            <li>Consulta Psicología del Clinica Presencial $30.000 Duración: 50 min</li>
+            <li>Consulta Psicología del Clinica Online $30.000 Duración: 50 min</li>
+          </ul>
+          </div>
+          <div id="closeModalPsiC"></div>
+        </div>
+      </div>
+
+      <div class="servicio" onclick="Alert.render('Traum')">
         <div class="servicio-container">
           <span>Traumatología</span>
           <img src="/img/iconos/traumatologia.png" alt="">
         </div>
       </div>
 
-      <!-- <div id="popUpBox">
-        <div id="box">       
-          <h1>Kinesiología</h1>
+      <div id="popUpTraum" class="popUpBox">
+        <div class="box">       
+          <h1>Traumatología</h1>
+          <div class="box-container">
           <p>
-            Se desarrolla en un ámbito clínico docente, es especializado y personalizado, usando la educación, ejercicio, terapia manual ortopédica y razonamiento clínico como herramientas. Bajo un modelo personalizado, su finalidad es rehabilitar y/o realizar un reintegro deportivo correcto y eficiente para quienes hayan sufrido alguna lesión, tengan molestia o dolor y deseen volver a sus actividades normales. Por otro lado, nos enfocamos en la prevención de lesiones, por lo que quienes quieran iniciar una vida más activa de manera segura y eficiente o disminuir el riesgo de la actividad física que realizan actualmente, pueden beneficiarse de la consulta de kinesiología.
-            Busca realizar una evaluación completa, analizando la historia completa del paciente sumado a una examinación física exhaustiva para llegar a un diagnóstico funcional, evidenciando las limitaciones en la actividad y restricciones en la partición que estén influyendo en la calidad de vida de la persona. Luego se planifica e implementa un tratamiento, en donde, se educa y potencia a la persona como un ente activo en su propia rehabilitación.
-            Duración: 55 minutos
-            Precios: 
-            - 30.000 por sesión presencial (33.000 director clínico)
-            - 25.000 por sesión online (28.000 director clínico)
+            Se realiza una entrevista exhaustiva y un examen físico general dirigido al motivo de consulta, contemplando solicitud de exámenes e imágenes en caso de ser necesario. Con los resultados, se entrega un tratamiento y recomendaciones personalizadas, para de esta forma, atenuar los factores de riesgo de lesiones del paciente.
           </p>
-          <div id="closeModal"></div>
+          <ul>
+            <li>Traumatología Presencial $45.000 Duración: 20 min</li>
+            <li>Traumatología Online $40.000 Duración: 20 min</li>
+          </ul>
+          </div>
+          <div id="closeModalTraum"></div>
         </div>
-      </div> -->
-      <div class="servicio" >
-        <div class="servicio-container" onclick="Alert.render()">
+      </div>
+
+      <div class="servicio" onclick="Alert.render('MediG')">
+        <div class="servicio-container">
           <span>Medicina General</span>
           <img src="/img/iconos/medicina-general.png" alt="">
+        </div>
+      </div>
+
+      <div id="popUpMediG" class="popUpBox">
+        <div class="box">       
+          <h1>Medicina General</h1>
+          <div class="box-container">
+          <p>
+            El área de medicina general integra y resuelve las necesidades de sus pacientes como un completo, buscando las causas originarias y priorizando los planes de acción. Dentro de la consulta se revisan los antecedentes de la persona y la razón de su asistencia, para luego realizarles distintas pruebas y derivar al profesional o tratamiento correspondiente.
+          </p>
+          <ul>
+            <li>Medicina General Presencial $32.000 Duración: 20 min</li>
+            <li>Medicina General Online $30.000 Duración: 20 min</li>
+          </ul>
+          </div>
+          <div id="closeModalMediG"></div>
         </div>
       </div>
       

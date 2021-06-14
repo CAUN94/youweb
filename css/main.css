@@ -912,9 +912,10 @@ img {
   
 }
 
-#popUpBox{
-  width: 80%;
-  height: 60%;
+.popUpBox{
+  left:50%; 
+  width:80%;
+  height: auto;
   overflow: hidden;
   box-shadow: 0 0 10px black;
   border-radius: 10px;
@@ -929,6 +930,43 @@ img {
   border-radius: 10px;
   background-color: var(--light-gray);
 }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.box-container {
+  display: flex;
+}
+
+.box-container p{
+  margin: 0 auto;
+  width: 40%;
+  text-align: left;
+}
+
+.box-container ul{
+  margin: 0 auto;
+  width: 55%;
+  text-align: left;
+}
+
+.box button{
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0 auto;
+  border-style: solid;
+  border-color: #fff;
+  margin-top: 40px;
+  text-decoration: none;
+  background-color: var(--orange);
+  color: #ffffff;
+  padding: 10px 40px;
+}
+
 
 
 /* 
