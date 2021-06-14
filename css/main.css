@@ -941,16 +941,36 @@ img {
   display: flex;
 }
 
+@media only screen and (max-width: 800px){
+  .box-container{
+    display: block;
+  }
+  
+}
+
 .box-container p{
   margin: 0 auto;
   width: 40%;
   text-align: left;
 }
 
+@media only screen and (max-width: 800px){
+  .box-container p{
+    width: 100%;
+  }
+}
+
 .box-container ul{
   margin: 0 auto;
   width: 55%;
   text-align: left;
+}
+
+@media only screen and (max-width: 800px){
+  .box-container ul{
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 
 .box button{
