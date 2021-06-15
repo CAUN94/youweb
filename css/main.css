@@ -725,7 +725,7 @@ img {
 
 .team-hero .description {
   background-color: var(--orange);
-  font-size: 15px;
+  font-size: 20px;
   font-weight: normal;
   color: #fff;
   height: auto;
@@ -745,19 +745,15 @@ img {
 
 }
 
-@media only screen and (max-width: 800px){
-  .team-services {
-    display: block;
-    justify-content: ;
-  }
-}
+
 
 .team-services {
-  padding: 0 50px;
+  padding: 0 60px;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
-  margin-top: -65px;
+  margin-top: -70px;
   background-color: var(--light-gray);
 }
 
@@ -774,8 +770,9 @@ img {
 
 
 .team-service {
-  width: 120px;
-  height: 120px;
+  margin: 0 40px 10px 40px;
+  width: 140px;
+  height: 140px;
   display: flex;
   justify-content: center;
   flex-direction: column;
