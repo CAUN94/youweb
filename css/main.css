@@ -852,6 +852,7 @@ img {
   background-color: var(--black);
   border-radius: 10%;
   display: none;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 800px){
@@ -876,6 +877,7 @@ img {
 .team-picture:hover span,
 .team-picture:hover ul {
   opacity: 1;
+  cursor: pointer;
 }
 
 
